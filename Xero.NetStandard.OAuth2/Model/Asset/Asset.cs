@@ -149,6 +149,12 @@ namespace Xero.NetStandard.OAuth2.Model.Asset
         public bool? IsDeleteEnabledForDate { get; set; }
 
         /// <summary>
+        /// Tracking for the asset
+        /// </summary>
+        [DataMember(Name="trackingItems", EmitDefaultValue=false)]
+        public List<TrackingItem> TrackingItems { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
